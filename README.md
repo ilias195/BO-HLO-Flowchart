@@ -1,6 +1,9 @@
 # BO-HLO-Flowchart
+
+## Inventory System Flowchart
 ```mermaid
 flowchart TD
+
     A[Speler ziet item] --> B[Speler pakt item op]
     B --> C{Is er ruimte in de inventory?}
     C -->|Ja| D[Item wordt toegevoegd aan inventory]
@@ -8,6 +11,7 @@ flowchart TD
     E --> F[Item kan gebruikt worden voor crafting of hotbar]
     C -->|Nee| G[Item wordt niet toegevoegd]
 ```
+##CraftingTable Flowchart
 ```mermaid
 flowchart TD
     A[Speler opent de CraftingTable] --> B[Speler sleept items vanuit de inventory naar craft slots]
@@ -18,7 +22,7 @@ flowchart TD
     C -->|Nee| G[Er verschijnt geen craftresultaat]
     G --> H[Speler kan items aanpassen of verwijderen]
 ```
-
+##ReloadSystem flowchart
 ```mermaid
 flowchart TD
      A[Speler craft munitie via CraftingTable] --> B[Munitie wordt als prefab/item opgeslagen]
@@ -36,7 +40,7 @@ flowchart TD
     K --> L[Speler moet nieuwe munitie craften of verzamelen]
 ```
 
-
+## Doorsystem Flowchart
 
 ```mermaid
 flowchart TD
